@@ -1,0 +1,222 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+/* FLEXBOX - CSS to make HTML page footer stay at bottom of the page with a minimum height, but not overlap the page
+ */
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    min-height: 50px;
+}
+footer {
+    min-height: 50px;
+    /* background: PapayaWhip; */
+}
+
+/* Trick */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* FONT FAMILY */
+/* @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"); */
+body {
+    font-family: "Open Sans", sans-serif;
+    /* font-size: 15px; */
+}
+
+/* NAV BAR */
+#header-container {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    height: 60px;
+}
+
+.nav-1,
+.nav-2,
+.nav-2 > .logo-padding {
+    display: flex;
+    align-items: center;
+}
+
+.nav-1 {
+    padding-right: 15px;
+}
+
+.nav-1 > .menu-1 {
+    padding-right: 15px;
+}
+
+.nav-2 > .menu-1 {
+    padding-right: 15px;
+}
+
+.nav-2 > .icon-padding > .fa-bars {
+    font-size: 20px;
+}
+
+.icon-2 {
+    padding-right: 7.5px;
+    /* padding-top: 4px; */
+}
+
+.logo-padding,
+.icon-padding {
+    padding-right: 17px;
+    display: flex;
+}
+.logo-padding > img {
+    border-radius: 50%;
+
+    /* width: 100%; */
+    height: 32px;
+}
+
+/* KAI UZVEDI PELE TURI ATSIRASTI APVALUS REMELIS, KURIS "NESTUMIA" CONTENTO */
+/* .logo-padding > img:hover {
+    border-radius: 50%;
+    border: 4px solid #333; */
+/* width: 100%; */
+
+.nav-1 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+.nav-1 a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT CSS */
+
+/* LOGO CONTAINER */
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* xD */
+    height: 294px;
+}
+
+/* SEARCH BORDER */
+
+#search-border {
+    display: flex;
+    justify-content: center;
+    /* border: 4px solid green; */
+    /* width: 400px; */
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 8px 5px 14px;
+}
+
+#search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 25px;
+    width: 480px;
+    height: 45px;
+}
+
+/* search forma pakeisti dydi */
+
+#search-field {
+    width: 100%;
+    height: 27px;
+    border: none;
+    font-size: 17px;
+}
+
+#search-field:focus {
+    outline: none;
+}
+
+/* SEARCH MYGTUKAI */
+
+#search-bottom {
+    padding: 18px 0 0 0;
+    display: flex;
+    justify-content: center;
+
+    /* border: 4px solid yellowgreen; */
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    height: 35px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    border: 1px solid #333;
+}
+
+/* FOOTER */
+
+#foot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    /* flex-wrap: wrap; */
+    background-color: #fff;
+    height: 40px;
+    border-top: 1px solid #333;
+}
+
+ul {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul > li {
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH LAUKELIO ICONU TVARKYMAS */
+
+.icon {
+    padding: 15px;
+}
