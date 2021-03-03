@@ -1,6 +1,4 @@
-# google-homepage
-
-THE-ODIN-PROJECT:
+# THE-ODIN-PROJECT:
 https://www.theodinproject.com/courses/foundations/lessons/html-css#assignment
 # Static copy of:
 https://www.google.com/
