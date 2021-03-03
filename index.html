@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>google-page</title>
+        <!-- FONT AWSOME https://fontawesome.com/kits-->
+        <script
+            src="https://kit.fontawesome.com/13b49633ca.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- EXTERNAL CSS -->
+        <link rel="stylesheet" href="/style/style.css" />
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header id="header">
+            <div id="header-container">
+                <div class="nav-1">
+                    <a class="menu-1" href="#">Gmail</a>
+                    <a class="menu-1" href="#">Images</a>
+                </div>
+                <div class="nav-2">
+                    <!-- papildomas div, kad bandyt :hover padaryt (kai uzvedi pele sviecia remelis) -->
+                    <div class="icon-padding">
+                        <i class="menu-1 icon-2 fas fa-bars"></i>
+                    </div>
+                    <div class="logo-padding">
+                        <img src="/img/face-icon.jpg" alt="Face" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="logo-container">
+                    <div class="main-logo">
+                        <img
+                            src="/img/googlelogo_color_272x92dp.png"
+                            alt="google-logo"
+                        />
+                    </div>
+                </div>
+
+                <div id="search-border">
+                    <div id="search-input">
+                        <i class="icon fas fa-search"></i>
+                        <input type="text" name="search" id="search-field" />
+                        <!-- <i class="icon far fa-keyboard"></i> -->
+                        <i class="icon fas fa-microphone-alt"></i>
+                    </div>
+                </div>
+                <!-- 2 BUTTONS: "SEARCH + LUCKY" -->
+                <div id="search-bottom">
+                    <form action="https://google.com">
+                        <input
+                            class="btn"
+                            type="submit"
+                            value="Google Search"
+                        />
+                    </form>
+                    <form action="https://google.com">
+                        <input
+                            class="btn"
+                            type="submit"
+                            value="I'm Feeling Lucky"
+                        />
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer id="foot-container">
+            <div id="foot-left">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Bysiness</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+            </div>
+            <div id="foot-right">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
