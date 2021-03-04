@@ -186,23 +186,32 @@ body {
 
 #foot-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    align-content: flex-end;
-    /* flex-wrap: wrap; */
+    /* align-content: flex-end; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 10px 0 10px 0; */
+    flex-wrap: wrap;
     background-color: #fff;
-    height: 40px;
+    height: auto;
     border-top: 1px solid #333;
 }
 
 ul {
-    padding-left: 30px;
-    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
 }
 
 ul > li {
     display: inline;
-    padding: 0 15px 0 15px;
+    text-align: center;
+    padding: 15px;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
 }
 
 ul > li > a {
