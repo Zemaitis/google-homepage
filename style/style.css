@@ -42,15 +42,15 @@ footer {
 /* FONT FAMILY */
 /* @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"); */
 body {
-    font-family: "Open Sans", sans-serif;
-    /* font-size: 15px; */
+    font-family: arial, "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #222;
 }
 
 /* NAV BAR */
 #header-container {
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
     height: 60px;
 }
 
@@ -61,6 +61,15 @@ body {
     align-items: center;
 }
 
+/* ACCOUNT LOGO - ICON */
+.logo-padding > img {
+    border: 5px solid transparent;
+}
+.logo-padding > img:hover {
+    border: 5px solid rgba(60, 64, 67, 0.08);
+    cursor: pointer;
+}
+
 .nav-1 {
     padding-right: 15px;
 }
@@ -69,18 +78,25 @@ body {
     padding-right: 15px;
 }
 
-.nav-2 > .menu-1 {
+.nav-2 > .icon-padding {
     padding-right: 15px;
 }
 
+/* NAV BAR "MENU" ICON */
 .nav-2 > .icon-padding > .fa-bars {
     font-size: 20px;
+    border-radius: 50%;
 }
 
-.icon-2 {
-    padding-right: 7.5px;
-    /* padding-top: 4px; */
+.nav-2 > .icon-padding > .fa-bars:hover {
+    font-size: 20px;
+    background-color: rgba(60, 64, 67, 0.08);
+    cursor: pointer;
 }
+
+/* .icon-2 {
+    padding-right: 7.5px;
+} */
 
 .logo-padding,
 .icon-padding {
@@ -89,16 +105,8 @@ body {
 }
 .logo-padding > img {
     border-radius: 50%;
-
-    /* width: 100%; */
     height: 32px;
 }
-
-/* KAI UZVEDI PELE TURI ATSIRASTI APVALUS REMELIS, KURIS "NESTUMIA" CONTENTO */
-/* .logo-padding > img:hover {
-    border-radius: 50%;
-    border: 4px solid #333; */
-/* width: 100%; */
 
 .nav-1 a {
     text-decoration: none;
@@ -122,13 +130,11 @@ body {
     height: 294px;
 }
 
-/* SEARCH BORDER */
+/* SEARCH BORDER / CONTAINER*/
 
 #search-border {
     display: flex;
     justify-content: center;
-    /* border: 4px solid green; */
-    /* width: 400px; */
     margin-top: 25px;
     margin-left: 20px;
     margin-right: 20px;
@@ -139,13 +145,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #333;
-    border-radius: 25px;
-    width: 480px;
-    height: 45px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 482px;
+    height: 44px;
 }
 
-/* search forma pakeisti dydi */
+/* search input  > search icon styling */
+
+#search-input > .icon {
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#search-input > .fa-microphone-alt {
+    padding: 15px;
+    color: red;
+    cursor: pointer;
+}
+
+/* SEARCH FIELD STYLING */
 
 #search-field {
     width: 100%;
@@ -164,69 +183,56 @@ body {
     padding: 18px 0 0 0;
     display: flex;
     justify-content: center;
-
-    /* border: 4px solid yellowgreen; */
 }
 
 .btn {
-    font-size: 15px;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    height: 35px;
+    height: 36px;
+    font-size: 14px;
     background-color: #f2f2f2;
-    border: 1px solid transparent;
+    color: #222;
+    padding: 7.5px;
+    margin: 5px;
     border-radius: 4px;
+    border: none;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .btn:hover {
-    border: 1px solid #333;
+    border: 1px solid #dadce0;
 }
 
 /* FOOTER */
 
 #foot-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    /* align-content: flex-end; */
     padding-left: 20px;
     padding-right: 20px;
-    /* padding: 10px 0 10px 0; */
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #f2f2f2;
     height: auto;
-    border-top: 1px solid #333;
+    border-top: 1px solid #dadce0;
 }
 
 ul {
     display: flex;
     justify-content: center;
-    /* padding-left: 30px; */
-    /* padding-right: 30px; */
 }
 
 ul > li {
     display: inline;
     text-align: center;
     padding: 15px;
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
 }
 
 ul > li > a {
     text-decoration: none;
-    color: #333;
+    color: rgba(0, 0, 0, 0.54);
     font-size: 15px;
 }
 
 ul > li > a:hover {
     text-decoration: underline;
-}
-
-/* SEARCH LAUKELIO ICONU TVARKYMAS */
-
-.icon {
-    padding: 15px;
 }
