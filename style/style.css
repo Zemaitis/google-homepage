@@ -195,7 +195,10 @@ body {
 
 #foot-container {
     display: flex;
-    justify-content: space-evenly;
+    /* for "smaller" screen */
+    /* justify-content: space-evenly; */
+    /* for "bigger" screen */
+    justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
