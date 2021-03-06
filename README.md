@@ -9,4 +9,4 @@ Developed in html and css (flexbox and no media queries) and not used DEV TOOLS,
 
 # TO DO 2021-03-06:
 
-Fix button // use DEV TOOLS from original site to copy font and color options // add footer for small screen
+Learn how to add border or background of "google dash menu" icon
