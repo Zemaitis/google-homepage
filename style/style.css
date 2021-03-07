@@ -195,8 +195,6 @@ body {
 
 #foot-container {
     display: flex;
-    /* for "smaller" screen */
-    /* justify-content: space-evenly; */
     /* for "bigger" screen */
     justify-content: space-between;
     align-items: center;
@@ -206,6 +204,14 @@ body {
     background-color: #f2f2f2;
     height: auto;
     border-top: 1px solid #dadce0;
+}
+
+/* for "smaller" screen */
+@media screen and (max-width: 624px) {
+    #foot-container {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 ul {
